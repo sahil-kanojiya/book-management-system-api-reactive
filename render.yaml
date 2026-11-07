@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: book-management-system-api-reactive
+    runtime: docker
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx384m -Xms128m -XX:+UseSerialGC -Dserver.port=8080"
+      - key: SPRING_R2DBC_URL
+        sync: false
+      - key: SPRING_R2DBC_USERNAME
+        sync: false
+      - key: SPRING_R2DBC_PASSWORD
+        sync: false
