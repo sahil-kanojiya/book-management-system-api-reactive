@@ -1,4 +1,4 @@
-package com.hello.BOOK_API_Reactive;
+package com.bookapi.reactive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

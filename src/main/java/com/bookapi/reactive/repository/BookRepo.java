@@ -1,6 +1,6 @@
-package com.hello.BOOK_API_Reactive.repository;
+package com.bookapi.reactive.repository;
 
-import com.hello.BOOK_API_Reactive.model.Book;
+import com.bookapi.reactive.model.Book;
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;

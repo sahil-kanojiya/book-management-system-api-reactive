@@ -1,4 +1,4 @@
-package com.hello.BOOK_API_Reactive.ReactiveConfig;
+package com.bookapi.reactive.config;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;

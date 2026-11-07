@@ -1,9 +1,9 @@
-package com.hello.BOOK_API_Reactive.service;
+package com.bookapi.reactive.service;
 
-import com.hello.BOOK_API_Reactive.dto.BookRequestDto;
-import com.hello.BOOK_API_Reactive.dto.BookResponseDto;
-import com.hello.BOOK_API_Reactive.model.Book;
-import com.hello.BOOK_API_Reactive.repository.BookRepo;
+import com.bookapi.reactive.dto.BookRequestDto;
+import com.bookapi.reactive.dto.BookResponseDto;
+import com.bookapi.reactive.model.Book;
+import com.bookapi.reactive.repository.BookRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

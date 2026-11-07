@@ -1,14 +1,16 @@
-package com.hello.BOOK_API_Reactive.dto;
+package com.bookapi.reactive.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
 @Data
-@NoArgsConstructor
-public class BookRequestDto {
+@Builder
+public class BookResponseDto {
+    private Integer id;
     private String name;
     private int price;
     private String author;

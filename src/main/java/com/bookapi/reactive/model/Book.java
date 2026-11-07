@@ -1,4 +1,4 @@
-package com.hello.BOOK_API_Reactive.model;
+package com.bookapi.reactive.model;
 
 import lombok.Builder;
 import lombok.Data;

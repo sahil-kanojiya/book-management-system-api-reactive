@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hello</groupId>
-	<artifactId>BOOK_API_Reactive</artifactId>
+	<artifactId>com.bookapi.reactive</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BOOK_API_Reacive</name>
 	<description>Demo project for Spring Boot</description>

@@ -1,4 +1,4 @@
-package com.hello.BOOK_API_Reactive.exception;
+package com.bookapi.reactive.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
