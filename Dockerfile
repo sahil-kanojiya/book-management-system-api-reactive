@@ -5,7 +5,7 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temurin:21-jre-alpine AS runtime
+FROM eclipse-temurin:24-jre-alpine AS runtime
 WORKDIR /app
 COPY --from=builder /workspace/target/*.jar app.jar
 EXPOSE 8080
