@@ -1,9 +1,13 @@
-FROM openjdk:21
+# Multi-stage Dockerfile for Java 21 Reactive Book API
+FROM maven:3.9-eclipse-temurin-21 AS builder
+WORKDIR /workspace
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package -DskipTests
 
+FROM eclipse-temurin:21-jre-alpine AS runtime
 WORKDIR /app
-
-COPY ./target/BOOK_API-0.0.1-SNAPSHOT.jar /app/
-
+COPY --from=builder /workspace/target/*.jar app.jar
 EXPOSE 8080
-
-CMD ["java", "-jar", "BOOK_API-0.0.1-SNAPSHOT.jar"]
+ENV JAVA_OPTS="-XX:+UseSerialGC -Xmx384m -Xms128m"
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
